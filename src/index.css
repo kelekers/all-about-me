@@ -6,6 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.italic-text {
+    font-style: italic;
+}
+
+.medium-text {
+  font-size: 11px;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
