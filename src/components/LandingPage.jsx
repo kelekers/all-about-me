@@ -32,8 +32,9 @@ export default function LandingPage({ user }) {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-gray-300 max-w-xl"
         >
-          Semoga tugas ini dapat dimaknai dengan apik dan selamat membaca!
+          Semoga tugas ini dapat dimaknai dengan apik dan selamat membaca! {""}
         </motion.p>
+        
 
         <motion.button
           whileHover={{ scale: 1.1 }}

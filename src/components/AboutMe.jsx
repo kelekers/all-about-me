@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile.png";
+import profilePic from "../assets/profile.jpeg";
 import { motion } from "framer-motion";
 
 export default function AboutMe() {
