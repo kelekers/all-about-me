@@ -3,44 +3,44 @@ import { motion } from "framer-motion";
 export default function MyShape() {
   const data = [
     {
-      komponen: "S – Signature Strengths (Kekuatan Khas)",
+      komponen: "S – Signature Strengths",
       deskripsi:
-        "Analitis, adaptif, visioner, reflektif. Memiliki pola pikir sistematis dan kemampuan membaca struktur kompleks. Senang membangun solusi dari ide abstrak.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
       contoh:
-        "Menjadi penghubung ide & teknis pada proyek Studify dan prototype Trufman; cepat menemukan pola error dan menyusun solusi efisien.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
-      komponen: "H – Heart (Nilai & Gairah)",
+      komponen: "H – Heart",
       deskripsi:
-        "Nilai utama: integritas, tanggung jawab, dan pertumbuhan. Tertarik pada bagaimana teknologi meningkatkan nilai kemanusiaan.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
       contoh:
-        "Membuat konsep ZeroToHero – microlearning Gen-Z, menggabungkan UI/UX dengan empati pengguna; aktif di kolaborasi antar-lembaga kampus.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
-      komponen: "A – Aptitudes & Acquired Skills (Bakat & Keterampilan)",
+      komponen: "A – Aptitudes & Acquired Skills",
       deskripsi:
-        "Cepat belajar, problem solver, fokus pada inovasi dan kerapian sistem.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
       contoh:
-        "Hard Skills: React, Supabase, Flask, SQL, Network & Security. Soft Skills: Leadership, Empati, Communication, Teamwork.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
-      komponen: "P – Personality (Profil Kepribadian)",
+      komponen: "P – Personality",
       deskripsi:
-        "INTP-T / “Builder-Thinker”: logis tapi imajinatif, rasional namun reflektif. Cocok di lingkungan dengan kebebasan berpikir dan eksplorasi ide.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
       contoh:
-        "Menyimbangkan kerja individu & kolaborasi dalam tim besar seperti Kementerian Kolaborasi Lembaga dan FSAE ITB.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
-      komponen: "E – Experiences (Pengalaman Hidup)",
+      komponen: "E – Experiences",
       deskripsi:
-        "Pernah mengalami kegagalan, penolakan, dan tanggung jawab besar dalam organisasi; menumbuhkan ketahanan, empati, dan disiplin.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
       contoh:
-        "Memimpin 100+ lembaga sebagai Dirjen; partisipasi di CTF, FSAE, dan berbagai proyek digital kampus.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
   ];
 
   const misi =
-    "Menggunakan kemampuan analitis dan kreativitas untuk membangun sistem—baik teknologi maupun manusia—yang selaras antara logika dan nurani; menjadi jembatan antara data dan empati.";
+    "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ";
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#0e001a] via-[#1a0033] to-[#3b007d] text-white px-6 py-20 flex flex-col items-center">

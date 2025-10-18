@@ -4,32 +4,32 @@ export default function MyPersonalReview() {
   const table = [
     {
       kriteria: "Freshness",
-      nilai: "5",
+      nilai: "0",
       penjelasan:
-        "Cerita terasa segar karena berangkat dari pengalaman pribadi dalam lomba internasional di Manila. Ide tentang 'keheningan sebagai bentuk komunikasi' jarang diangkat dan menjadi pembeda yang kuat dibanding kisah reflektif umum.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
       kriteria: "Engagement",
-      nilai: "5",
+      nilai: "0",
       penjelasan:
-        "Alur jelas dan emosional — pembaca mengikuti perjalanan dari cemas menjadi sadar dan tenang. Perubahan makna di akhir memberi daya tarik kuat.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
       kriteria: "Humor",
-      nilai: "4",
+      nilai: "0",
       penjelasan:
-        "Humor halus dan kontekstual, seperti kalimat 'baru kali ini aku dipuji karena tidak bicara.' Hangat dan menyeimbangkan nuansa reflektif.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
     {
       kriteria: "Inspiration",
-      nilai: "5",
+      nilai: "0",
       penjelasan:
-        "Pesan kuat dan membekas — bahwa diam dan mendengarkan adalah bentuk komunikasi penting. Cerita mengundang refleksi mendalam.",
+        "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ",
     },
   ];
 
   const refleksi =
-    "Ceritaku merepresentasikan diriku saat menghadapi tekanan. Saya cenderung ingin hasil cepat, namun pengalaman ini mengingatkan bahwa mendengarkan bisa lebih efektif. Saya belajar bahwa komunikasi baik datang dari ketulusan untuk memahami, bukan hanya kecepatan berpikir.";
+    "hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog hog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog riderhog ";
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#0e001a] via-[#1a0033] to-[#3b007d] text-white px-6 py-20">

@@ -12,6 +12,7 @@ export default function Navbar({ onLogout }) {
           {[
             { name: "Home", path: "/" },
             { name: "About Me", path: "/about" },
+            { name: "My Story", path: "/stories" },
             { name: "My Songs", path: "/songs" },
             { name: "My SHAPE", path: "/my-shape" },
             { name: "My PR", path: "/review" },

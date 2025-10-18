@@ -5,10 +5,9 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#0e001a] via-[#1a0033] to-[#3b007d] text-white px-6 py-24"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#0e001a] via-[#1a0033] to-[#3b007d] text-white px-6 py-20"
     >
 
-      
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -30,35 +29,47 @@ export default function AboutMe() {
           transition={{ duration: 1 }}
           className="flex-1 text-center md:text-left"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#b88900] via-[#ffd966] to-[#fff8e1] text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#b88900] via-[#ffd966] to-[#fff8e1] text-transparent bg-clip-text text-justify">
             About Me
           </h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            Hello! I’m{" "}
+          <p className="text-white mb-4 leading-relaxed text text-justify">
+            Halo! Aku{" "}
             <span className="text-purple-400 font-bold">
               Abhinaya Rajendra Fargaz
             </span>
-            , a student of{" "}
+            , mahasiswa{" "}
             <span className="text-purple-300">
-              Information Technology Systems at ITB
+              Sistem dan Teknologi Informasi ITB
             </span>
-            . I’m passionate about creativity, digital innovation, and building
-            meaningful experiences through technology and design.
+            . Aku orang yang suka berpikir dan mencari tahu hal-hal di balik sesuatu. 
+            Rasanya menyenangkan ketika bisa menggabungkan logika dan imajinasi untuk 
+            memahami dunia dengan caraku sendiri. Aku tertarik pada seni dan teknologi, 
+            mulai dari desain dan gambar, coding, sampai 3D modeling di Blender atau SolidWorks. 
+            Semua itu menjadi cara bagiku untuk menyalurkan rasa ingin tahu dan menciptakan sesuatu yang punya makna.
           </p>
 
-          <p className="text-gray-400">
-            Outside of academics, I love expressing myself through writing,
-            music, and visual art. I believe that technology is not just about
-            solving problems — it’s about connecting people and emotions.
+          <p className="text-gray-400 mb-4 leading-relaxed text-justify">
+            Kadang aku menyampaikan pendapat yang tidak sejalan dengan kebiasaan umum, 
+            tapi justru di situ aku merasa hidup. Ada kepuasan tersendiri ketika bisa membuat 
+            orang berhenti sejenak dan berpikir, “iya juga ya.” Aku tidak mencari konfrontasi, 
+            aku hanya suka melihat sesuatu dari sisi yang belum banyak diperhatikan orang lain.
           </p>
 
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-8 px-6 py-3 rounded-full bg-purple-500/20 backdrop-blur-lg border border-purple-400/50 text-purple-200 hover:bg-purple-500/30 transition"
-          >
-            View My Works →
-          </motion.button>
+          <p className="text-white mb-4 leading-relaxed text-justify">
+            Buatku, daya tarik seseorang tidak datang dari seberapa keras ia meyakinkan orang lain, 
+            tetapi dari seberapa nyaman ia membuat orang di sekitarnya. Aku percaya hubungan yang baik 
+            lahir ketika kita mau mendengar tanpa memaksakan kehendak sendiri.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed text-justify">
+            Aku senang berbincang tentang banyak hal, mulai dari sejarah dunia, sains, 
+            hingga teori konspirasi atau topik acak yang memancing rasa ingin tahu. 
+            Apa pun bisa jadi bahan obrolan selama ada ruang untuk berpikir, bertanya, 
+            dan saling tukar pandangan. Karena pada akhirnya, yang paling menarik bukan hanya 
+            topiknya, tapi proses menemukan sudut pandang baru bersama orang lain.
+          </p>
+
+
         </motion.div>
       </div>
     </section>

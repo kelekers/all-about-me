@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Navbar from "./components/Navbar.jsx";
 import LandingPage from "./components/LandingPage.jsx";
 import AboutMe from "./components/AboutMe.jsx";
+import MyStory from "./components/MyStory.jsx";
 import MySongs from "./components/MySongs.jsx";
 import LoginPage from "./components/LoginPage.jsx";
 import MyShape from "./components/MyShape.jsx";
@@ -26,6 +27,8 @@ function App() {
     setUser(null);
   };
 
+  console.log("User di App:", user);
+
   return (
   <Router>
     <div className="bg-[#0e001a] min-h-screen text-white">
@@ -39,9 +42,10 @@ function App() {
           </>
         ) : (
           <>
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/" element={<LandingPage user={user} />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/songs" element={<MySongs />} />
+            <Route path="/stories" element={<MyStory />} />
             <Route path="/my-shape" element={<MyShape />} />
             <Route path="/review" element={<MyPersonalReview />} />
             <Route path="*" element={<Navigate to="/" replace />} />
