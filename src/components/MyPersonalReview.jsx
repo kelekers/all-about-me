@@ -39,7 +39,7 @@ export default function MyPersonalReview() {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-[#000000] via-[#ffdd45] to-[#ffffff] text-transparent bg-clip-text pb-2.5"
+        className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-[#b88900] via-[#ffd966] to-[#fff8e1] text-transparent bg-clip-text pb-2.5"
       >
         My Personal Review ✨
       </motion.h1>
@@ -67,7 +67,7 @@ export default function MyPersonalReview() {
                 transition={{ delay: i * 0.1 }}
                 className="border-t border-white/20 hover:bg-white/15 transition"
               >
-                <td className="p-4 font-semibold text-purple-300 align-top">
+                <td className="p-4 font-bold text-purple-300 align-top">
                   {row.kriteria}
                 </td>
                 <td className="p-4 text-center text-purple-200 align-top">
@@ -88,7 +88,7 @@ export default function MyPersonalReview() {
         transition={{ delay: 0.4 }}
         className="mt-10 bg-white/15 backdrop-blur-2xl border border-white/20 rounded-2xl p-6 shadow-lg max-w-5xl mx-auto"
       >
-        <h3 className="text-xl font-semibold text-pink-300 mb-3">Refleksi</h3>
+        <h3 className="text-xl font-bold text-pink-300 text-center mb-3">Refleksi</h3>
         <p className="text-purple-100 leading-relaxed">{refleksi}</p>
       </motion.div>
     </section>

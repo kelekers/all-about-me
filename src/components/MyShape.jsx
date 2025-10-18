@@ -76,7 +76,7 @@ export default function MyShape() {
                 transition={{ delay: index * 0.1 }}
                 className="border-t border-white/20 hover:bg-white/15 transition"
               >
-                <td className="p-4 font-semibold text-purple-300 align-top text-jus">
+                <td className="p-4 font-bold text-purple-300 align-top text-jus">
                   {row.komponen}
                 </td>
                 <td className="p-4 text-purple-100 align-top text-justify">
@@ -95,7 +95,7 @@ export default function MyShape() {
         transition={{ delay: 0.5 }}
         className="mt-12 text-center max-w-3xl mx-auto bg-white/15 border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-2xl"
       >
-        <h2 className="text-2xl font-semibold text-pink-300 mb-3 drop-shadow-lg">
+        <h2 className="text-xl font-bold text-pink-300 mb-3 drop-shadow-lg">
           Pernyataan Misi Pribadi
         </h2>
         <p className="text-purple-100 leading-relaxed">{misi}</p>

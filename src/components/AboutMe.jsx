@@ -7,7 +7,7 @@ export default function AboutMe() {
       id="about"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#0e001a] via-[#1a0033] to-[#3b007d] text-white px-6 py-24"
     >
-      
+
       
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div
@@ -30,12 +30,12 @@ export default function AboutMe() {
           transition={{ duration: 1 }}
           className="flex-1 text-center md:text-left"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#b88900] via-[#ffffff] to-[#ffffff] text-transparent bg-clip-text">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#b88900] via-[#ffd966] to-[#fff8e1] text-transparent bg-clip-text">
             About Me
           </h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
             Hello! I’m{" "}
-            <span className="text-purple-400 font-semibold">
+            <span className="text-purple-400 font-bold">
               Abhinaya Rajendra Fargaz
             </span>
             , a student of{" "}
