@@ -47,7 +47,6 @@ export default function MyStory() {
         ))}
       </div>
 
-      {/* === POPUP === */}
       <AnimatePresence>
         {selectedStory && (
           <motion.div
