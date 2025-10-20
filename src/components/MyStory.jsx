@@ -79,7 +79,7 @@ export default function MyStory() {
                   onClick={() => setSelectedStory(null)}
                   className="mt-6 px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-white transition"
                 >
-                  Close
+                  Tutup
                 </button>
               </div>
             </motion.div>

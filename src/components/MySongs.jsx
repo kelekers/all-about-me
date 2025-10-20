@@ -9,7 +9,7 @@ export default function MySongs() {
       title: "Can't Help Falling in Love",
       id: "YuH_90giGTQ",
       lyrics:
-        "[Verse 1]\nWise men say\n\"Only fools rush in\"\nBut I can't help\nFalling in love with you\n\n[Verse 2]\nShall I stay?\nWould it be a sin\nIf I can't help\nFalling in love with you?\n\n[Chorus]\nLike a river flows\nSurely to the sea\nDarling, so it goes\nSome things are meant to be\n\n[Verse 3]\nTake my hand\nTake my whole life, too\nFor I can't help\nFalling in love with you\n\n[Chorus]\nLike a river flows\nSurely to the sea\nDarling, so it goes\nSome things are meant to be\n\n[Outro]\nTake my hand\nTake my whole life, too\nFor I can't help\nFalling in love with you\nFor I can't help\nFalling in love with you",
+        '[Verse 1]\nWise men say\n"Only fools rush in"\nBut I can\'t help\nFalling in love with you\n\n[Verse 2]\nShall I stay?\nWould it be a sin\nIf I can\'t help\nFalling in love with you?\n\n[Chorus]\nLike a river flows\nSurely to the sea\nDarling, so it goes\nSome things are meant to be\n\n[Verse 3]\nTake my hand\nTake my whole life, too\nFor I can\'t help\nFalling in love with you\n\n[Chorus]\nLike a river flows\nSurely to the sea\nDarling, so it goes\nSome things are meant to be\n\n[Outro]\nTake my hand\nTake my whole life, too\nFor I can\'t help\nFalling in love with you\nFor I can\'t help\nFalling in love with you',
     },
     {
       title: "One More Time, One More Chance",
@@ -24,6 +24,9 @@ export default function MySongs() {
         "[Verse 1]\nCome stop your cryin', it will be alright\nJust take my hand, hold it tight\nI will protect you from all around you\nI will be here, don't you cry\n\n[Verse 2]\nFor one so small, you seem so strong\nMy arms will hold you, keep you safe and warm\nThis bond between us can't be broken\nI will be here, don't you cry\n\n[Chorus]\n'Cause you'll be in my heart\nYes, you'll be in my heart\nFrom this day on, now and forevermore\nYou'll be in my heart\nNo matter what they say\nYou'll be here in my heart always\n\n[Verse 3]\nWhy can't they understand the way we feel?\nThey just don't trust what they can't explain\nAnd I know we're different, but deep inside us\nWe're not that different at all\n\n[Chorus]\nAnd you'll be in my heart\nYes, you'll be in my heart\nFrom this day on, now and forevermore\n\n[Bridge]\nDon't listen to them\n'Cause what do they know? (What do they know?)\nWe need each other, to have, to hold\nThey'll see in time, I know\nWhen destiny calls you\nYou must be strong (You gotta be strong)\nI may not be with you, but you've got to hold on\nThey'll see in time, I know\nWe'll show them together\n\n[Chorus]\n'Cause you'll be in my heart\nBelieve me, you'll be in my heart\nI'll be there from this day on\nNow and forevermore\nOoh, you'll be in my heart (You'll be here in my heart, oh)\nNo matter what they say (I'll be with you)\nYou'll be here in my heart (I'll be there)\nAlways\n\n[Outro]\nAlways, I'll be with you\nAnd I'll be there for you always\nAlways and always\nJust look over your shoulder\nJust look over your shoulder\nJust look over your shoulder\nI'll be there, always",
     },
   ];
+
+  const rangkum =
+    "Musik selalu menjadi cara paling jujur untuk mengungkapkan hal-hal yang sulit diucapkan dengan kata. Ada saat-saat di mana kata-kata terasa terlalu sempit untuk menampung rasa  dan di sanalah lagu-lagu ini berbicara untukku.\n\nSetiap nada, setiap lirik, menjadi potongan kecil dari perasaanku terhadap dunia, terhadap orang-orang yang pernah datang dan pergi, dan terhadap diriku sendiri yang terus belajar memahami arti cinta, kehilangan, dan penerimaan.\n\n“Can’t Help Falling in Love” adalah tentang ketulusan yang tak bisa dijelaskan oleh logika. Kadang kita jatuh cinta bukan karena alasan, tapi karena hati memilih untuk percaya, meski tahu bisa terluka.\n\n“One More Time, One More Chance” bercerita tentang penyesalan dan waktu  tentang bagaimana kita sering terlambat menyadari betapa berharganya seseorang, dan keinginan sederhana untuk diberi kesempatan satu kali lagi.\n\nSementara “You’ll Be in My Heart” mengingatkanku bahwa kasih sayang sejati tidak selalu berarti memiliki. Kadang, mencintai berarti menjaga dari jauh, atau sekadar yakin bahwa seseorang akan baik-baik saja meski kita tidak di sana.\n\nTiga lagu ini menjadi jembatan antara rasionalitasku dan sisi lembut dalam diriku  antara logika yang mencoba memahami dan hati yang hanya ingin merasakan.\n\nDan mungkin, lewat lagu-lagu ini, aku hanya ingin berkata dengan sederhana: “Beginilah caraku mencintai  diam, tulus, dan penuh makna.”";
 
   return (
     <section
@@ -51,6 +54,21 @@ export default function MySongs() {
           />
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        viewport={{ once: true }}
+        className="mt-12 text-center max-w-3xl mx-auto bg-white/15 border border-white/20 rounded-2xl p-6 shadow-2xl backdrop-blur-2xl"
+      >
+        <h2 className="text-xl font-bold text-pink-300 mb-3 drop-shadow-lg">
+          Rangkuman Lagu
+        </h2>
+        <p className="text-purple-100 text-justify whitespace-pre-line">
+          {rangkum}
+        </p>
+      </motion.div>
 
       <AnimatePresence>
         {selectedSong && (
@@ -104,7 +122,6 @@ function VideoCard({ video, onReadMore }) {
       viewport={{ once: true }}
       className="rounded-xl overflow-hidden shadow-lg bg-black/40 border border-purple-700 flex flex-col"
     >
-
       <div className="relative aspect-video w-full">
         {isPlaying ? (
           <iframe
@@ -139,12 +156,14 @@ function VideoCard({ video, onReadMore }) {
       </div>
 
       <div className="p-4 flex flex-col bg-black/20">
-        <h3 className="text-xl font-semibold text-yellow-200 mb-2">{video.title}</h3>
+        <h3 className="text-xl font-semibold text-yellow-200 mb-2">
+          {video.title}
+        </h3>
         <button
           onClick={onReadMore}
           className="text-purple-300 text-sm italic text-left hover:text-purple-400 transition focus:outline-none"
         >
-          Read more →
+          Lirik →
         </button>
       </div>
     </motion.div>
