@@ -169,10 +169,11 @@ const calculateTotalScore = (data) => {
   const score = average.toFixed(2);
 
   let grade;
-  if (average >= 4.5) grade = "Sempurna";
-  else if (average >= 4.0) grade = "Sangat Baik";
-  else if (average >= 3.0) grade = "Baik";
-  else grade = "Perlu Peningkatan";
+  if (average = 5.0) grade = "Sangat Baik";
+  else if (average >= 4.0) grade = "Baik";
+  else if (average >= 3.0) grade = "Cukup";
+  else if (average >= 2.0) grade = "Kurang";
+  else grade = "Buruk";
 
   return { score: `${score} / 5`, grade };
 };
@@ -293,7 +294,7 @@ const exportToCSV = (data) => {
   data.forEach(uts => {
     const utsTitle = `"${uts.title}"`;
     const utsNilai = uts.isPending ? '0' : uts.nilai_rata;
-    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : (uts.nilai_rata >= 4.8 ? 'Sempurna' : 'Baik');
+    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : (uts.nilai_rata = 5 ? 'Sangat Baik' : 'Baik');
     csv += `${utsTitle},${utsNilai},"${utsGrade}"\n`;
 
     uts.details.forEach(detail => {
