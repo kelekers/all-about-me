@@ -293,7 +293,7 @@ const exportToCSV = (data) => {
   data.forEach(uts => {
     const utsTitle = `"${uts.title}"`;
     const utsNilai = uts.isPending ? '0' : uts.nilai_rata;
-    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : (uts.nilai_rata >= 4.5 ? 'Sempurna' : 'Sangat Baik');
+    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : (uts.nilai_rata >= 4.8 ? 'Sempurna' : 'Baik');
     csv += `${utsTitle},${utsNilai},"${utsGrade}"\n`;
 
     uts.details.forEach(detail => {
