@@ -36,7 +36,7 @@ export default function LoginPage({ onLogin }) {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-300 to-pink-400 text-transparent bg-clip-text pb-2.5"
+        className="text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-400 text-transparent bg-clip-text pb-2.5"
       >
         Silakan Login ✨
       </motion.h1>
