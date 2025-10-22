@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo } from "react";
 
+// --- Data Mentah (Disesuaikan untuk kalkulasi) ---
 const rawReviewData = [
   {
     title: "UTS 1 - About Me",
@@ -148,8 +149,9 @@ const rawReviewData = [
 ];
 
 const refleksi =
-  "Mengerjakan rangkaian tugas UTS dari All About Me hingga My Personal Review menjadi perjalanan yang tidak sekadar akademik, melainkan proses mengenal diri sendiri secara lebih dalam. Setiap bagian menuntutku untuk membuka lapisan-lapisan pikiran dan perasaan yang sebelumnya mungkin tidak kusadari.\n\nPada UTS-1 (All About Me), aku belajar bahwa memperkenalkan diri bukan hanya tentang menyebut siapa aku, tetapi tentang menunjukkan mengapa aku menjadi seperti sekarang. Di situ aku menyadari bahwa keunikan bukan sesuatu yang harus disembunyikan, melainkan dirawat dan dibagikan sebagai identitas yang utuh.\n\nMelalui UTS-2 (My Songs for You), aku menemukan bahwa lagu dapat menjadi bahasa universal yang menjembatani logika dan emosi. Saat menulis refleksi tiap lagu, aku belajar bahwa perasaan yang sulit diungkap seringkali bisa diterjemahkan melalui seni. Musik menjadi medium yang jujur, bukan hanya untuk mengekspresikan cinta, tetapi juga untuk menerima kehilangan dan memaknai keikhlasan.\n\nPada UTS-3 (My Story for You), aku menghadapi cermin dari sisi diriku yang paling rapuh. Cerita itu mengajarkanku bahwa diam bukan selalu kebijaksanaan, terkadang ia adalah bentuk ketakutan. Namun dari ketakutan itulah muncul keberanian untuk mengenali dan menerima diri sendiri. Momen ini menjadi titik balik bagiku dalam memahami bahwa kejujuran emosional adalah bagian penting dari komunikasi interpersonal.\n\nDi UTS-4 (My SHAPE), aku menemukan keterhubungan antara pengalaman hidup, bakat, dan nilai pribadi. Menulis “Piagam Diri” membuatku mengerti bahwa kekuatan seseorang tidak selalu ditentukan oleh kecepatan atau pencapaian, tetapi oleh pemahaman yang mendalam terhadap arah dan makna dari setiap langkah. Aku menyadari bahwa keseimbangan antara logika dan perasaan adalah fondasi penting dalam membangun versi terbaik dari diriku.\n\nAkhirnya, UTS-5 (My Personal Review) menjadi refleksi menyeluruh tentang bagaimana aku berkomunikasi, berpikir, dan berempati. Di sini aku belajar untuk meninjau ulang bukan hanya isi pesanku, tetapi juga niat di balik setiap kata. Aku memahami bahwa komunikasi yang efektif bukan sekadar tentang seberapa jelas kita berbicara, melainkan seberapa tulus kita mendengarkan.\n\nDari keseluruhan proses ini, aku menyimpulkan bahwa tugas-tugas UTS bukan hanya menilai kemampuan berbicara atau menulis, tetapi menumbuhkan kesadaran interpersonal. Aku menjadi lebih sadar bahwa di balik setiap percakapan ada nilai, perasaan, dan kesempatan untuk tumbuh bersama orang lain.\n\nKe depan, aku ingin terus membawa semangat ini dalam kehidupan akademik maupun pribadi agar setiap interaksi bukan hanya menjadi pertukaran informasi, tetapi juga pertukaran makna.\n\n“Pada akhirnya, mengenal diri adalah bentuk komunikasi paling jujur yang bisa dilakukan manusia.”";
+  "Mengerjakan rangkaian tugas UTS dari All About Me hingga My Personal Review menjadi perjalanan yang tidak sekadar akademik, melainkan proses mengenal diri sendiri secara lebih dalam. Setiap bagian menuntutku untuk membuka lapisan-lapisan pikiran dan perasaan yang sebelumnya mungkin tidak kusadari.\n\nPada UTS-1 (All About Me), aku belajar bahwa memperkenalkan diri bukan hanya tentang menyebut siapa aku, tetapi tentang menunjukkan mengapa aku menjadi seperti sekarang. Di situ aku menyadari bahwa keunikan bukan sesuatu yang harus disembunyikan, melainkan dirawat dan dibagikan sebagai identitas yang utuh.\n\nMelalui UTS-2 (My Songs for You), aku menemukan bahwa lagu dapat menjadi bahasa universal yang menjembatani logika dan emosi. Saat menulis refleksi tiap lagu, aku belajar bahwa perasaan yang sulit diungkap seringkali bisa diterjemahkan melalui seni. Musik menjadi medium yang jujur, bukan hanya untuk mengekspresikan cinta, tetapi juga untuk menerima kehilangan dan memaknai keikhlasan.\n\nPada UTS-3 (My Story for You), aku menghadapi cermin dari sisi diriku yang paling rapuh. Cerita itu mengajarkanku bahwa diam bukan selalu kebijaksanaan, terkadang ia adalah bentuk ketakutan. Namun dari ketakutan itulah muncul keberanian untuk mengenali dan menerima diri sendiri. Momen ini menjadi titik balik bagiku dalam memahami bahwa kejujuran emosional adalah bagian penting dari komunikasi interpersonal.\n\nDi UTS-4 (My SHAPE), aku menemukan keterhubungan antara pengalaman hidup, bakat, dan nilai pribadi. Menulis “Piagam Diri” membuatku mengerti bahwa kekuatan seseorang tidak selalu ditentukan oleh kecepatan atau pencapaian, tetapi oleh pemahaman yang mendalam terhadap arah dan makna dari setiap langkah. Aku menyadari bahwa keseimbangan antara logika dan perasaan adalah fondasi penting dalam membangun versi terbaik dari diriku.\n\nAkhirnya, UTS-5 (My Personal Review) menjadi refleksi menyeluruh tentang bagaimana aku berkomunikasi, berpikir, dan berempati. Di sini aku belajar untuk meninjau ulang bukan hanya isi pesanku, tetapi juga niat di balik setiap kata. Aku memahami bahwa komunikasi yang efektif bukan sekadar tentang seberapa jelas kita berbicara, melainkan seberapa tulus kita mendengarkan.\n\nDari keseluruhan proses ini, aku menyimpulkan bahwa tugas-tugas UTS bukan hanya menilai kemampuan berbicara atau menulis, tetapi menumbuhkan kesadaran interpersonal. Aku menjadi lebih sadar bahwa di balik setiap percakapan ada nilai, perasaan, dan kesempatan untuk tumbuh bersama orang lain.\n\nKe depan, aku ingin terus membawa semangat reflektif ini dalam kehidupan akademik maupun pribadi — agar setiap interaksi bukan hanya menjadi pertukaran informasi, tetapi juga pertukaran makna.\n\n“Pada akhirnya, mengenal diri adalah bentuk komunikasi paling jujur yang bisa dilakukan manusia.”";
 
+// --- Fungsi Perhitungan Dinamis ---
 const calculateTotalScore = (data) => {
   let totalNilai = 0;
   let jumlahUTS = 0;
@@ -169,14 +171,17 @@ const calculateTotalScore = (data) => {
   const score = average.toFixed(2);
 
   let grade;
-  if (average = 5.0) grade = "Sangat Baik";
-  else if (average >= 4.0) grade = "Baik";
-  else if (average >= 3.0) grade = "Cukup";
-  else if (average >= 2.0) grade = "Kurang";
-  else grade = "Buruk";
+  // LOGIKA BARU SESUAI PERMINTAAN:
+  if (average >= 4.5) grade = "Sangat Baik"; // Nilai 5
+  else if (average >= 4.0) grade = "Baik"; // Nilai 4 - < 5
+  else if (average >= 3.0) grade = "Cukup"; // Nilai 3 - < 4
+  else if (average >= 2.0) grade = "Kurang"; // Nilai 2 - < 3
+  else grade = "Buruk"; // Nilai 1 - < 2
 
   return { score: `${score} / 5`, grade };
 };
+
+// --- Komponen Pembantu ---
 
 const accordionVariants = {
   open: { opacity: 1, height: "auto", transition: { duration: 0.4 } },
@@ -207,7 +212,7 @@ const ReviewItem = ({ item }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true, amount: 0.2 }}
       className={`mb-4 rounded-xl border border-purple-600/50 shadow-2xl overflow-hidden cursor-pointer ${getBackgroundColor()}`}
@@ -288,17 +293,22 @@ const ReviewItem = ({ item }) => {
   );
 };
 
+// --- Fungsi Export CSV ---
 const exportToCSV = (data) => {
   let csv = "UTS,Nilai Rata-rata,Penjelasan\n";
 
   data.forEach(uts => {
+    // Tambahkan baris UTS
     const utsTitle = `"${uts.title}"`;
     const utsNilai = uts.isPending ? '0' : uts.nilai_rata;
-    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : (uts.nilai_rata = 5 ? 'Sangat Baik' : 'Baik');
+    const { grade } = calculateTotalScore([{ nilai_rata: uts.nilai_rata }]);
+    const utsGrade = uts.isPending ? 'Menunggu Penilaian' : grade;
     csv += `${utsTitle},${utsNilai},"${utsGrade}"\n`;
 
+    // Tambahkan detail kriteria
     uts.details.forEach(detail => {
-      csv += `"  - ${detail.kriteria}",${detail.nilai},"${detail.penjelasan.replace(/"/g, '""')}"\n`;
+      const detailNilai = detail.nilai === "-" ? 'N/A' : detail.nilai;
+      csv += `"  - ${detail.kriteria}",${detailNilai},"${detail.penjelasan.replace(/"/g, '""')}"\n`;
     });
   });
 
@@ -319,6 +329,9 @@ const exportToCSV = (data) => {
   }
 };
 
+
+// --- Komponen Utama ---
+
 export default function MyPersonalReview() {
   const finalScore = useMemo(() => calculateTotalScore(rawReviewData), []);
 
@@ -329,7 +342,7 @@ export default function MyPersonalReview() {
 
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         className="text-4xl font-extrabold text-center mb-12 bg-gradient-to-r from-[#b88900] via-[#ffd966] to-[#fff8e1] text-transparent bg-clip-text pb-2.5"
@@ -337,9 +350,10 @@ export default function MyPersonalReview() {
         My Personal Review
       </motion.h1>
 
+      {/* 1. Summary Card (Rekap Nilai) */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
         className="max-w-xl w-full p-8 mb-12 rounded-2xl border-2 border-pink-500/50 shadow-2xl bg-black/30 backdrop-blur-sm text-center"
@@ -381,6 +395,7 @@ export default function MyPersonalReview() {
         </motion.button>
       </motion.div>
 
+      {/* 2. Detail Reviews (Accordion Cards) */}
       <div className="max-w-4xl w-full">
         <h2 className="text-3xl font-bold text-center text-pink-300 mb-6 drop-shadow-lg">
           Detail UTS Review
@@ -390,17 +405,18 @@ export default function MyPersonalReview() {
         ))}
       </div>
 
+      {/* 3. Refleksi */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 1 }}
         viewport={{ once: true }}
         className="mt-16 bg-white/15 backdrop-blur-2xl border border-white/20 rounded-2xl p-6 shadow-lg max-w-5xl mx-auto"
       >
-        <h3 className="text-2xl font-bold text-pink-300 text-center mb-3">
+        <h3 className="text-2xl font-bold text-pink-300 text-center mb-4">
           Refleksi Proses
         </h3>
-        <p className="text-purple-100 leading-relaxed whitespace-pre-line text-justify border-t border-white/20 pt-2">
+        <p className="text-purple-100 leading-relaxed whitespace-pre-line text-justify">
           {refleksi}
         </p>
       </motion.div>
