@@ -3,12 +3,21 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 import Navbar from "./components/Navbar.jsx";
 import LandingPage from "./components/LandingPage.jsx";
+
+// UTS
 import AboutMe from "./components/AboutMe.jsx";
 import MyStory from "./components/MyStory.jsx";
 import MySongs from "./components/MySongs.jsx";
 import LoginPage from "./components/LoginPage.jsx";
 import MyShape from "./components/MyShape.jsx";
-import MyPersonalReview from "./components/MyPersonalReview";
+import MyPersonalReview from "./components/MyPersonalReview.jsx";
+
+// UAS
+import MyConcepts from "./components/MyConcepts.jsx";
+import MyOpinions from "./components/MyOpinions.jsx";
+import MyInnovations from "./components/MyInnovations.jsx";
+import MyKnowledge from "./components/MyKnowledge.jsx";
+import MyProfessionalReview from "./components/MyProfessionalReview.jsx";
 
 function App() {
   const [user, setUser] = useState(
@@ -43,11 +52,21 @@ function App() {
         ) : (
           <>
             <Route path="/" element={<LandingPage user={user} />} />
+
+            // UTS
             <Route path="/about" element={<AboutMe />} />
             <Route path="/songs" element={<MySongs />} />
-            <Route path="/stories" element={<MyStory />} />
+            <Route path="/stories" element={<MyStory user={user} />} />
             <Route path="/my-shape" element={<MyShape />} />
             <Route path="/review" element={<MyPersonalReview />} />
+            
+            // UAS
+            <Route path="/concepts" element={<MyConcepts />} />
+            <Route path="/opinions" element={<MyOpinions />} />
+            <Route path="/innovations" element={<MyInnovations />} />
+            <Route path="/knowledge" element={<MyKnowledge />} />
+            <Route path="/professional-review" element={<MyProfessionalReview />} />
+
             <Route path="*" element={<Navigate to="/" replace />} />
           </>
         )}

@@ -1,7 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function MySongs() {
+  const navigate = useNavigate();
   const [selectedSong, setSelectedSong] = useState(null);
   const [activeTab, setActiveTab] = useState("meaning");
 

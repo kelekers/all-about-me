@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import profilePicUrl from "../assets/profile.jpeg";
 import gambar from "../assets/gambar.jpeg";
 import blender from "../assets/blender.jpeg";
@@ -38,6 +39,7 @@ const itemVariants = {
 };
 
 export default function AboutMe() {
+  const navigate = useNavigate();
 
   return (
     <section
@@ -202,6 +204,28 @@ export default function AboutMe() {
             </p>
           </div>
         </motion.div>
+
+        {/* Navigation Footer
+        <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            className="flex justify-between items-center mt-16 pt-8 border-t border-white/10"
+        >
+            <button 
+                onClick={() => navigate("/")}
+                className="px-6 py-2 rounded-full border border-purple-500/30 text-purple-300 hover:bg-purple-500/10 transition"
+            >
+                ← Back to Home
+            </button>
+            
+            <button 
+                onClick={() => navigate("/songs")}
+                className="px-6 py-2 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-700 text-black font-bold hover:scale-105 transition shadow-lg shadow-yellow-500/20"
+            >
+                Next: My Songs →
+            </button>
+        </motion.div> */}
       </div>
     </section>
   );
