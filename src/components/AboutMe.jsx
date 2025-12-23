@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import profilePicUrl from "../assets/profile.jpeg";
+import profilePicUrl from "../assets/profile.jpg";
 import gambar from "../assets/gambar.jpeg";
 import blender from "../assets/blender.jpeg";
 import foto from "../assets/foto.jpeg";
